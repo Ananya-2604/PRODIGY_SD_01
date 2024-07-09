@@ -1,0 +1,22 @@
+#include <stdio.h>
+void main(){
+printf("Enter the temperature\n");
+scanf("%d",&t);
+printf("Enter the Scale used:C for Celsius,F for Fahrenheit and K for Kelvin\n");
+scanf("%d",&c);
+switch(c){
+case 'c':
+case 'C':printf("The Temperature is:\n");
+        printf("Fahrenheit=%d\n",((t*9)/5)+32);
+        printf("Kelvin=%f\n",t+273.15);break;
+case 'f':
+case 'F':printf("The Temperature is:\n");
+        printf("Celsius=%d\n",((t-32)*5)/9);
+        printf("Kelvin=%f\n",(((t-32)*5)/9)+273.15);break;
+case 'k':
+case 'K':printf("The Temperature is:\n");
+        printf("Celsius=%f\n",k-273.15);
+        printf("Fahrenheit=%f\n",(((t-32)*5)/9)+273.15);break;
+default:printf("Enter valid Scale\n");
+}}
+
